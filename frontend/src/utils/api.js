@@ -1,4 +1,5 @@
-const API_BASE = 'http://localhost:3000/api';
+const API_URL_ROOT = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const API_BASE = `${API_URL_ROOT}/api`;
 
 async function request(endpoint, options = {}) {
     const url = `${API_BASE}${endpoint}`;
@@ -58,5 +59,5 @@ export const api = {
     setSetting: (key, value) => request(`/settings/${key}`, { method: 'PUT', body: { value } }),
 
     // Media URL helper
-    mediaUrl: (path) => `http://localhost:3000${path}`
+    mediaUrl: (path) => `${API_URL_ROOT}${path}`
 };
