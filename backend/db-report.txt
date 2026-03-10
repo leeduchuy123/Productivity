@@ -1,0 +1,125 @@
+--- TÓM TẮT DATABASE ---
+
+[ Bảng Habit ]
+Tổng số hàng: 1
+Preview vài hàng đầu:
+[
+  {
+    "id": 2,
+    "name": "Ngủ sớm",
+    "type": "boolean",
+    "targetValue": null,
+    "targetMode": null,
+    "unit": null,
+    "icon": "🚶",
+    "color": "#ffa502",
+    "isActive": true,
+    "created_at": "2026-03-06T00:52:45.917Z"
+  }
+]
+
+[ Bảng HabitLog ]
+Tổng số hàng: 11
+Preview vài hàng đầu:
+[
+  {
+    "id": 3,
+    "habitId": 2,
+    "logDate": "2026-03-02",
+    "completed": true,
+    "value": null,
+    "created_at": "2026-03-06T00:52:47.920Z",
+    "habit_id": 2
+  },
+  {
+    "id": 4,
+    "habitId": 2,
+    "logDate": "2026-02-28",
+    "completed": true,
+    "value": null,
+    "created_at": "2026-03-06T00:52:53.145Z",
+    "habit_id": 2
+  },
+  {
+    "id": 1,
+    "habitId": null,
+    "logDate": "2026-03-03",
+    "completed": true,
+    "value": "1",
+    "created_at": "2026-03-03T17:40:34.464Z",
+    "habit_id": null
+  }
+]
+
+[ Bảng Media ]
+Tổng số hàng: 5
+Preview vài hàng đầu:
+[
+  {
+    "id": 1,
+    "type": "image",
+    "filename": "1772559774778-248708613.webp",
+    "originalName": "background.webp",
+    "mimeType": "image/webp",
+    "sizeBytes": 14706,
+    "created_at": "2026-03-03T17:42:54.799Z"
+  },
+  {
+    "id": 2,
+    "type": "image",
+    "filename": "1772674651541-288871186.jpg",
+    "originalName": "IMG_20260109_135519.jpg",
+    "mimeType": "image/jpeg",
+    "sizeBytes": 3279897,
+    "created_at": "2026-03-05T01:37:31.664Z"
+  },
+  {
+    "id": 3,
+    "type": "sound",
+    "filename": "1772674976279-291053267.mp3",
+    "originalName": "liecio-calming-rain-257596.mp3",
+    "mimeType": "audio/mpeg",
+    "sizeBytes": 3477420,
+    "created_at": "2026-03-05T01:42:56.335Z"
+  }
+]
+
+[ Bảng PomodoroSession ]
+Tổng số hàng: 93
+Preview vài hàng đầu:
+[
+  {
+    "id": 1,
+    "duration": 25,
+    "focusLabel": null,
+    "startedAt": "2026-03-03T17:41:29.326Z",
+    "completedAt": null,
+    "created_at": "2026-03-03T17:41:29.326Z"
+  },
+  {
+    "id": 2,
+    "duration": 15,
+    "focusLabel": null,
+    "startedAt": "2026-03-05T01:36:14.576Z",
+    "completedAt": null,
+    "created_at": "2026-03-05T01:36:14.578Z"
+  },
+  {
+    "id": 3,
+    "duration": 15,
+    "focusLabel": null,
+    "startedAt": "2026-03-05T01:36:17.580Z",
+    "completedAt": "2026-03-05T01:36:21.314Z",
+    "created_at": "2026-03-05T01:36:17.583Z"
+  }
+]
+
+[ Bảng Setting ]
+Tổng số hàng: 1
+Preview vài hàng đầu:
+[
+  {
+    "key": "pomodoro_bg",
+    "value": "/uploads/images/1772559774778-248708613.webp"
+  }
+]

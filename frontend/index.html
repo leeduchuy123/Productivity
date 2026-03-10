@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Productivity app with Pomodoro Timer and Habit Tracker" />
+  <title>Focusly — Pomodoro & Habits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="main-nav" class="nav">
+    <div class="nav-brand">
+      <span class="nav-logo">🎯</span>
+      <span class="nav-title">Focusly</span>
+    </div>
+    <div class="nav-links">
+      <a href="#/pomodoro" class="nav-link active" data-page="pomodoro" id="nav-pomodoro">
+        <span class="nav-icon">⏱️</span>
+        <span>Pomodoro</span>
+      </a>
+      <a href="#/habits" class="nav-link" data-page="habits" id="nav-habits">
+        <span class="nav-icon">✅</span>
+        <span>Habits</span>
+      </a>
+      <a href="#/stats" class="nav-link" data-page="stats" id="nav-stats">
+        <span class="nav-icon">📊</span>
+        <span>Stats</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="app"></main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
